@@ -12,13 +12,16 @@ function minMedMax(num1,num2,num3){
           maxValue = value;
       }
   }
+  // console.log(maxValue)
+
   // find Min value
   for(const value of seekValue){
       if(value < minValue){
           minValue = value;
       }
   }
-// find mid value
+  // console.log(minValue)
+
   for(const value of seekValue){
       if(value != minValue && value != maxValue){
           midValue = value
@@ -36,5 +39,6 @@ function minMedMax(num1,num2,num3){
       }
   }
   return {min: minValue, mid: midValue, max: maxValue}
+  
 }
 module.exports = minMedMax
