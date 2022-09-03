@@ -6,21 +6,21 @@ function minMedMax(n1, n2, n3) {
   let minValue = mValue[0]
   let midValue = mValue[0]
 
-  for(const Value of mValue){
-    if(Value > maxValue){
-      maxValue = Value;
+  for(const value of mValue){
+    if(value > maxValue){
+      maxValue = value;
     }
   }
 
-  for(const Value of mValue){
-    if(Value < minValue){
-      minValue = Value;
+  for(const value of mValue){
+    if(value < minValue){
+      minValue = value;
     }
   }
-  
-  for(const Value of mValue){
-    if(Value != minValue && Value != maxValue){
-      midValue = Value
+
+  for(const value of mValue){
+    if(value != minValue && value != maxValue){
+      midValue = value
     }
     if(n1 === n2){
       midValue = n1
