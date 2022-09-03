@@ -17,6 +17,7 @@ function minMedMax(n1, n2, n3) {
       minValue = Value;
     }
   }
+  
   for(const Value of mValue){
     if(Value != minValue && Value != maxValue){
       midValue = Value
