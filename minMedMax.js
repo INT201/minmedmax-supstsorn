@@ -1,37 +1,37 @@
 const { template } = require('@babel/core')
 
-function minMedMax(n1,n2,n3){
-  const mValue = [n1,n2,n3]
-  let maxValue = mValue[0]
-  let minValue = mValue[0]
-  let midValue = mValue[0]
+function minMedMax(num1,num2,num3){
+  const seekValue = [num1,num2,num3]
+  let maxValue = seekValue[0]
+  let minValue = seekValue[0]
+  let midValue = seekValue[0]
 
   // find Max Value
-  for(const value of mValue){
+  for(const value of seekValue){
       if(value > maxValue){
           maxValue = value;
       }
   }
   // find Min value
-  for(const value of mValue){
+  for(const value of seekValue){
       if(value < minValue){
           minValue = value;
       }
   }
 // find mid value
-  for(const value of mValue){
+  for(const value of seekValue){
       if(value != minValue && value != maxValue){
           midValue = value
       }
-      if(n1 === n2){
+      if(num1 === num2){
           midValue = num1
       }
 
-      if(n1 === n3){
+      if(num1 === num3){
           midValue = num1
       }
 
-      if(n2 === n3){
+      if(num2 === num3){
           midValue = num2
       }
   }
